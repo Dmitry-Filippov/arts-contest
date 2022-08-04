@@ -1,0 +1,27 @@
+@import "../../styles/fonts";
+@import "../../styles/colors";
+
+.about {
+  padding-top: 200px;
+}
+
+.about__text {
+  max-width: 790px;
+  margin: 0 auto;
+  font-family: $mainTextFont;
+  color: $mainTextColor;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.about__accent {
+  font-weight: 700;
+}
+
+.about__accent_type_green {
+  color: $textAccentColor;
+}

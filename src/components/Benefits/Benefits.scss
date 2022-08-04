@@ -1,0 +1,100 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+.benefits {
+  background-image: url(../../imgs/benefits-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 36px 0 94px 0;
+  margin-top: 164px;
+}
+
+.benefits__title {
+  font-family: $titlesFont;
+  color: $mainTextColor;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  span {
+    position: relative;
+    &::after {
+      content: url(../../imgs/benefits-underline.svg);
+      width: 105px;
+      height: 10px;
+      position: absolute;
+      left: 0;
+      top: 18px;
+    }
+  }
+}
+
+.benefits__list {
+  padding-top: 58px;
+  width: 1395px;
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.benefits__item {
+  background-color: $mainBackgroundColor;
+  box-shadow: 0px 5px 30px rgba(215, 211, 225, 0.5);
+  border-radius: 16px;
+  padding: 20px 35px 0 35px;
+  min-height: 170px;
+  box-sizing: border-box;
+}
+
+.benefits__icon {
+  width: 70px;
+  height: 70px;
+  background-position: center;
+  background-size: cover;
+}
+
+.star {
+  background-image: url(../../imgs/benefits-icons/star.svg);
+}
+
+.winne {
+  background-image: url(../../imgs/benefits-icons/winne.svg);
+}
+
+.sertification {
+  background-image: url(../../imgs/benefits-icons/certification.svg);
+}
+
+.gift {
+  background-image: url(../../imgs/benefits-icons/gift.svg);
+}
+
+.email {
+  background-image: url(../../imgs/benefits-icons/email.svg);
+}
+
+.vk {
+  background-image: url(../../imgs/benefits-icons/vk.svg);
+}
+
+.benefits__capture {
+  font-family: $mainTextFont;
+  color: $additionTextColor;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  padding-top: 8px;
+
+  a {
+    text-decoration-line: underline;
+    color: #ff946e;
+  }
+}
