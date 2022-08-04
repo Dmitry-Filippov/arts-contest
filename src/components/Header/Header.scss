@@ -1,0 +1,459 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+@keyframes timer {
+  from {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes space-appearence {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes button-color-toggle {
+  from {
+    background-color: $orange;
+    border-color: $orange;
+    color: $mainBackgroundColor;
+  }
+  to {
+    background-color: $mainBackgroundColor;
+    border-color: #1f1d2a;
+    color: $mainTextColor;
+  }
+}
+
+@keyframes elefant {
+  100% {
+    transform: translate(10px, 0) rotate(41deg);
+  }
+}
+
+@keyframes lamp {
+  11% {
+    transform: rotate(0);
+  }
+  40% {
+    transform: rotate(-40deg);
+  }
+  69% {
+    transform: rotate(5deg);
+  }
+  86% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes rocket {
+  67% {
+    transform: translate(0, 70px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes alarm {
+  from {
+    transform: scale(70%) rotate(0) ;
+  }
+  50% {
+    transform: scale(100%) rotate(180deg) ;
+  }
+  100% {
+    transform: scale(70%) rotate(360deg) ;
+  }
+}
+
+
+.header {
+  position: relative;
+  min-height: 810px;
+}
+
+.header__menu {
+  width: 1395px;
+  max-width: 90%;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 195px;
+  height: 50px;
+  background-image: url("../../imgs/header-logo.svg");
+  z-index: 2;
+}
+
+.header__login-link {
+  cursor: pointer;
+  border: 1px solid #1f1d2a;
+  border-radius: 15px;
+  background-color: $mainBackgroundColor;
+  z-index: 2;
+  font-family: $mainTextFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $mainTextColor;
+  padding: 10px 58.5px;
+  animation: button-color-toggle 1.5s 0.5s 1;
+}
+
+.header__login-link_orange {
+  background-color: $orange;
+  border-color: $orange;
+  color: $mainBackgroundColor;
+}
+
+.header__spase {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 882px;
+  height: 693px;
+  background: $cosmosNavyGrad;
+  background-size: cover;
+  -webkit-clip-path: url(#my-clip-path);
+  clip-path: url(#my-clip-path);
+  opacity: 0;
+  animation-name: space-appearence;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+}
+
+.header__spase_visible {
+  opacity: 1;
+}
+
+.header__stars {
+  position: absolute;
+  top: 11px;
+  left: 119px;
+}
+
+.header__space-plane {
+  width: 115px;
+  height: 45px;
+  background-image: url("../../imgs/space-plane.svg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 333px;
+  right: 49px;
+}
+
+.header__space-alarm {
+  width: 65px;
+  height: 90px;
+  position: absolute;
+  top: 223.93px;
+  right: 679px;
+  background-image: url("../../imgs/space-alarm.svg");
+  background-position: center;
+  background-size: cover;
+  animation: alarm 12s ease-in-out infinite;
+}
+
+.header__space-elefant {
+  width: 115px;
+  height: 90px;
+  background-image: url("../../imgs/space-elefant.svg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 228.77px;
+  right: 174.51px;
+  animation-name: elefant;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.header__space-lamp {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 331px;
+  right: 283px;
+  background-image: url("../../imgs/space-lamp.svg");
+  background-position: center;
+  background-size: cover;
+  animation-name: lamp;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.header__space-planet-one {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 86px;
+  right: 598px;
+  background-image: url("../../imgs/space-planet-1.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header__space-planet-two {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 138px;
+  right: 405px;
+  background-image: url("../../imgs/space-planet-2.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header__space-planet-three {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 464.82px;
+  right: 515px;
+  background-image: url("../../imgs/space-planet-3.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header__space-atom {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 136px;
+  right: 757px;
+  background-image: url(../../imgs/space-frame.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header__space-math-del {
+  width: 35px;
+  height: 40px;
+  position: absolute;
+  top: 189.39px;
+  right: 332.19px;
+  background-image: url(../../imgs/space-del.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header__space-plus {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 245px;
+  right: 420px;
+  background-image: url(../../imgs/space-plus.svg);
+}
+
+.heder__space-palitra {
+  width: 72px;
+  height: 51px;
+  position: absolute;
+  top: 121px;
+  right: 89px;
+  background-image: url(../../imgs/space-palitra.svg);
+}
+
+.header__space-rocket {
+  width: 170px;
+  height: 140px;
+  position: absolute;
+  top: 357px;
+  right: 624px;
+  background-image: url(../../imgs/space-racket.svg);
+  animation-name: rocket;
+  animation-duration: 12s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+.header__space-boul {
+  width: 70px;
+  height: 100px;
+  position: absolute;
+  top: 300px;
+  right: 458px;
+  background-image: url(../../imgs/space-boul.svg);
+}
+
+.header__girl {
+  width: 275px;
+  height: 330px;
+  position: absolute;
+  top: 477.4px;
+  right: 237.42px;
+  background-image: url("../../imgs/girl.svg");
+  background-size: cover;
+  z-index: 3;
+}
+
+.header__pen {
+  width: 49.28px;
+  height: 51.56px;
+  background-image: url("../../imgs/pen.svg");
+  position: absolute;
+  top: 620.65px;
+  right: 435.31px;
+  z-index: 2;
+}
+
+.header__planes {
+  width: 170px;
+  height: 90px;
+  position: absolute;
+  top: 720px;
+  right: 543px;
+  background-image: url("../../imgs/planes.svg");
+  background-size: cover;
+  z-index: 2;
+}
+
+.header__caption {
+  padding-top: 248px;
+  width: 1395px;
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: $mainTextFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 166%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $captionColor;
+}
+
+.header__title {
+  font-family: $titlesFont;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 122%;
+  color: $mainTextColor;
+  width: 1395px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.header__subtitle {
+  padding-top: 40px;
+  width: 1395px;
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: $mainTextFont;
+  color: $additionTextColor;
+}
+
+.header__wrapper {
+  padding-top: 60px;
+  width: 1395px;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__button {
+  box-shadow: 0px 15px 30px rgba(25, 218, 140, 0.25);
+  border-radius: 15px;
+  background-color: $mainButtonColor;
+  color: #fff;
+  padding: 18px 74.5px;
+  font-family: $mainTextFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.header__timer {
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.header__timer-days,
+.header__timer-hours,
+.header__timer-minutes {
+  padding: 11px 15.5px;
+  background-color: $mainBackgroundColor;
+  box-shadow: 0px 5px 30px rgba(215, 211, 225, 0.5);
+  border-radius: 16px;
+  font-family: $mainTextFont;
+  color: $orange;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+  position: relative;
+
+  span {
+    font-family: $mainTextFont;
+    color: $mainTextColor;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  span.header__timer-caption {
+    color: $captionColor;
+    bottom: -48px;
+  }
+}
+
+.header__timer-breacker {
+  padding: 0 10px;
+  font-family: $titlesFont;
+  color: $mainTextColor;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  animation-name: timer;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
