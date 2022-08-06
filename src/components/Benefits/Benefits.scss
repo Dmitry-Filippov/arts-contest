@@ -10,27 +10,8 @@
   margin-top: 164px;
 }
 
-.benefits__title {
-  font-family: $titlesFont;
-  color: $mainTextColor;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  letter-spacing: 0.04em;
-
-  span {
-    position: relative;
-    &::after {
-      content: url(../../imgs/benefits-underline.svg);
-      width: 105px;
-      height: 10px;
-      position: absolute;
-      left: 0;
-      top: 18px;
-    }
-  }
+.benefits__underline::after {
+  content: url(../../imgs/benefits-underline.svg);
 }
 
 .benefits__list {

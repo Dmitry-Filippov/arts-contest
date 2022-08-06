@@ -1,6 +1,7 @@
 import About from "../About/About";
 import Benefits from "../Benefits/Benefits";
 import Header from "../Header/Header";
+import Plan from "../Plan/Plan";
 import "./App.scss";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <main>
         <About />
         <Benefits />
+        <Plan />
       </main>
     </div>
   );
