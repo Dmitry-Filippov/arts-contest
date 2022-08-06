@@ -57,7 +57,7 @@ const Plan = () => {
           </p>
         </li>
         <li className="plan__step three">
-          <p className="plan__step__number plan__step-caption_three">3</p>
+          <p className="plan__step__number">3</p>
           <p
             className={`plan__step-caption ${
               isAnimated ? "plan__step-caption_three" : ""
