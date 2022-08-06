@@ -46,7 +46,7 @@
     transform: rotate(0);
   }
   40% {
-    transform: rotate(-40deg);
+    transform: rotate(40deg);
   }
   69% {
     transform: rotate(5deg);
@@ -71,16 +71,157 @@
 
 @keyframes alarm {
   from {
-    transform: scale(70%) rotate(0) ;
+    transform: scale(70%) rotate(0);
   }
   50% {
-    transform: scale(100%) rotate(180deg) ;
+    transform: scale(100%) rotate(180deg);
   }
   100% {
-    transform: scale(70%) rotate(360deg) ;
+    transform: scale(70%) rotate(360deg);
   }
 }
 
+@keyframes space-plane {
+  from {
+    transform: rotate(45deg) scale(50%);
+  }
+  to {
+    transform: rotate(0) scale(100%);
+  }
+}
+
+@keyframes planet-two {
+  7% {
+    transform: translate(0, 0);
+  }
+  57% {
+    transform: translate(30px, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes planet-one {
+  50% {
+    transform: translate(-50px, 20px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes atom {
+  from {
+    transform: scale(0%) rotate(0);
+  }
+  50% {
+    transform: scale(100%) rotate(45deg);
+  }
+  to {
+    transform: scale(0%) rotate(90deg);
+  }
+}
+
+@keyframes planet-three {
+  from {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes math-del {
+  from {
+    transform: scale(0%);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(100%);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(120%);
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes plus {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(100%);
+  }
+  95% {
+    opacity: 0;
+    transform: scale(120%);
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes boul {
+  from {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0, 34px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes palitra {
+  from {
+    transform: rotate(0);
+  }
+  11% {
+    transform: rotate(0);
+  }
+  83% {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pen {
+  from {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(24deg) translate(10px, 10px);
+    animation-timing-function: cubic-bezier(1,.75,.75,1.53);
+  }
+  50% {
+    transform: rotate(66deg) translate(10px, -10px);
+    animation-timing-function: cubic-bezier(1,.75,.75,1.53);
+  }
+  75% {
+    transform: rotate(72deg) translate(5px, -30px);
+    animation-timing-function: cubic-bezier(1,.75,.75,1.53);
+  }
+  to {
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(1,.75,.75,1.53);
+  }
+}
 
 .header {
   position: relative;
@@ -164,6 +305,7 @@
   position: absolute;
   top: 333px;
   right: 49px;
+  animation: space-plane 6s ease-in-out alternate infinite;
 }
 
 .header__space-alarm {
@@ -218,6 +360,7 @@
   background-image: url("../../imgs/space-planet-1.svg");
   background-position: center;
   background-size: cover;
+  animation: planet-one 12s ease-in-out infinite;
 }
 
 .header__space-planet-two {
@@ -229,6 +372,7 @@
   background-image: url("../../imgs/space-planet-2.svg");
   background-size: cover;
   background-position: center;
+  animation: planet-two 12s ease-in-out infinite;
 }
 
 .header__space-planet-three {
@@ -240,6 +384,7 @@
   background-image: url("../../imgs/space-planet-3.svg");
   background-position: center;
   background-size: cover;
+  animation: planet-three 12s ease-in-out infinite;
 }
 
 .header__space-atom {
@@ -251,6 +396,7 @@
   background-image: url(../../imgs/space-frame.svg);
   background-position: center;
   background-size: cover;
+  animation: atom 12s ease infinite;
 }
 
 .header__space-math-del {
@@ -262,6 +408,7 @@
   background-image: url(../../imgs/space-del.svg);
   background-position: center;
   background-size: cover;
+  animation: math-del 12s cubic-bezier(0.04, 0.28, 0.36, 0.17) infinite;
 }
 
 .header__space-plus {
@@ -271,6 +418,7 @@
   top: 245px;
   right: 420px;
   background-image: url(../../imgs/space-plus.svg);
+  animation: plus 12s cubic-bezier(0.04, 0.28, 0.36, 0.17) infinite;
 }
 
 .heder__space-palitra {
@@ -280,6 +428,7 @@
   top: 121px;
   right: 89px;
   background-image: url(../../imgs/space-palitra.svg);
+  animation: palitra 12s ease-in-out infinite;
 }
 
 .header__space-rocket {
@@ -302,6 +451,7 @@
   top: 300px;
   right: 458px;
   background-image: url(../../imgs/space-boul.svg);
+  animation: boul 12s ease-in-out infinite;
 }
 
 .header__girl {
@@ -323,6 +473,7 @@
   top: 620.65px;
   right: 435.31px;
   z-index: 2;
+  animation: pen 4.5s infinite;
 }
 
 .header__planes {
