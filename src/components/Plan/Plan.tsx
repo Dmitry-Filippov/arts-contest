@@ -12,13 +12,13 @@ const Plan = () => {
     if (isAnimated) {
       setTimeout(() => {
         setFirstVisible(true);
-      }, 700);
+      }, 1200);
       setTimeout(() => {
         setSecondVisible(true);
-      }, 1500);
+      }, 2000);
       setTimeout(() => {
         setThirdVisible(true);
-      }, 2300);
+      }, 2800);
     }
   }, [isAnimated]);
 
