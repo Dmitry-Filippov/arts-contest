@@ -1,0 +1,45 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+.diploma {
+  margin-top: 148px;
+  min-height: 451px;
+  background-image: url(../../imgs/diploma-background.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.diploma__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1391px;
+  margin: 0 auto;
+  position: relative;
+  top: -185px;
+}
+
+.diploma__text .section-title {
+  text-align: left;
+  padding-top: 56px;
+}
+
+.diploma__underline::after {
+  content: url(../../imgs/diploma-underline.svg);
+}
+
+.diploma__paragraph {
+  padding-top: 27px;
+  width: 497px;
+  font-family: $mainTextFont;
+  color: $additionTextColor;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+}
+
+.diploma__diploma {
+  width: 680px;
+  height: 480px;
+}
