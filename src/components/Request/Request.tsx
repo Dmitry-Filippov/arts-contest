@@ -30,7 +30,7 @@ const Request = () => {
           <FormInput type="text" placeholder="Город" />
           <FormInput type="email" placeholder="Email" />
           <FormInput type="password" placeholder="Пароль" />
-          <FormCheckbox className="request__checkbox" />
+          <FormCheckbox className="request__checkbox" id="request-checkbox" />
           <button type="submit" className="request__submit">
             Участвовать
           </button>

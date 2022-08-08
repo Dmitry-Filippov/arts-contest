@@ -3,6 +3,7 @@ import Benefits from "../Benefits/Benefits";
 import Diploma from "../Diploma/Diploma";
 import Faq from "../Faq/Faq";
 import Header from "../Header/Header";
+import Mailing from "../Mailing/Mailing";
 import Plan from "../Plan/Plan";
 import Request from "../Request/Request";
 import "./App.scss";
@@ -18,6 +19,7 @@ function App() {
         <Diploma />
         <Request />
         <Faq />
+        <Mailing />
       </main>
     </div>
   );

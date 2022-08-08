@@ -1,0 +1,64 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+.mailing {
+  margin: 0 auto;
+  margin-top: 200px;
+  border-radius: 81px;
+  width: 90%;
+  max-width: 1680px;
+  background-image: url(../../imgs/mailing-background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 30px;
+
+  .section-title {
+    color: $whiteTextColor;
+  }
+}
+
+.mailing__subtitle {
+  font-family: $mainTextColor;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $whiteTextColor;
+  width: 406px;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.mailing__form {
+  padding-left: 429px;
+  padding-top: 40px;
+  padding-bottom: 67px;
+}
+
+.mailing__button {
+  margin-left: 30px;
+  padding: 18px 122px;
+  background-color: $mainButtonColor;
+  font-family: $mainTextFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $whiteTextColor;
+  border-radius: 15px;
+}
+
+.mailing__checkbox {
+  margin-top: 20px;
+  a {
+    color: $whiteTextColor;
+  }
+}
