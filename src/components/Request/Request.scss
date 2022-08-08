@@ -1,0 +1,156 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+@keyframes form-plane {
+  from {
+    transform: scale(1, -1) rotate(30deg);
+    offset-distance: 0%;
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    transform: scale(1, -1) rotate(30deg);
+    offset-distance: 79%;
+    animation-timing-function: ease-out;
+  }
+
+  90% {
+    transform: scale(1, -1) rotate(19deg);
+    offset-distance: 100%;
+    animation-timing-function: cubic-bezier(0, -0.01, 0.52, 1.93);
+  }
+
+  to {
+    transform: scale(1, -1) rotate(25deg);
+    offset-distance: 96%;
+    animation-timing-function: cubic-bezier(0, -0.01, 0.52, 1.93);
+  }
+}
+
+@keyframes form-plane-one {
+  from {
+    transform: translate(75px, 0) rotate(0deg);
+  }
+  to {
+    transform: translate(70px, 0) rotate(3deg);
+  }
+}
+
+@keyframes form-plane-two {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+.request {
+  padding-top: 200px;
+  width: 90%;
+  width: 1395px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 20px;
+}
+
+.request__price {
+  width: 490px;
+  height: 490px;
+  margin-top: 110px;
+}
+
+.request__form-block .section-title {
+  text-align: left;
+}
+
+.request__form {
+  padding-top: 50px;
+  position: relative;
+}
+
+.request__form .form-input {
+  margin-top: 20px;
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.request__checkbox {
+  padding-top: 52px;
+  a {
+    color: $textAccentColor;
+  }
+}
+
+.request__submit {
+  margin-top: 50px;
+  font-family: $mainTextFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: $additionButtonColor;
+  padding: 18px 46px;
+  width: 290px;
+  box-shadow: 0px 15px 30px rgba(218, 71, 25, 0.25);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.request__planes {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  margin-right: 30px;
+}
+
+.request__plane-one {
+  background-image: url(../../imgs/formPlane1.svg);
+  height: 90.53074128416444px;
+  width: 119.5648683527965px;
+  transform: translate(75px, 0);
+  z-index: 2;
+}
+
+.request__plane-one_animated {
+  transform: translate(70px, 0) rotate(3deg);
+  animation: form-plane-one 0.3s 1 ease;
+}
+
+.request__plane-two {
+  background-image: url(../../imgs/formPlane2.png);
+  height: 77.10347364682735px;
+  width: 118.75264562038238px;
+  z-index: 1;
+}
+
+.request__plane-two_animated {
+  transform: rotate(5deg);
+  animation: form-plane-two 0.3s 1 ease;
+}
+
+.request__plane-three {
+  background-image: url(../../imgs/plane.svg);
+  background-size: cover;
+  position: absolute;
+  top: -160px;
+  right: -70px;
+  width: 110px;
+  height: 65px;
+  transform: scale(1, -1) rotate(25deg);
+  offset-path: path("M364 1C112.679 247.265 86.5 234 1 219.5");
+  offset-distance: 96%;
+  z-index: 4;
+  display: none;
+}
+
+.request__plane-three_animated {
+  animation: form-plane 2s 1;
+  display: block;
+}

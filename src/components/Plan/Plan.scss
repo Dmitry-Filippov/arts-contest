@@ -120,6 +120,7 @@
   left: 0;
   rotate: 40deg;
   opacity: 0;
+  z-index: 5;
 }
 .plan__plane_animated {
   animation: plane 6s ease .5s 1;

@@ -1,0 +1,17 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+.form-input {
+  width: 540px;
+  padding: 18px 20px;
+  border: 1px solid #9fa0a7;
+  border-radius: 15px;
+  background-color: #fff;
+  font-family: $mainTextFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: $additionTextColor;
+}

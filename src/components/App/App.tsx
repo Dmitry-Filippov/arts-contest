@@ -3,6 +3,7 @@ import Benefits from "../Benefits/Benefits";
 import Diploma from "../Diploma/Diploma";
 import Header from "../Header/Header";
 import Plan from "../Plan/Plan";
+import Request from "../Request/Request";
 import "./App.scss";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Benefits />
         <Plan />
         <Diploma />
+        <Request />
       </main>
     </div>
   );
