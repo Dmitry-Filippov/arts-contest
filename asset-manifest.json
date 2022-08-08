@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/arts-contest/static/css/main.5c3c2054.css",
-    "main.js": "/arts-contest/static/js/main.99b0fc0c.js",
+    "main.css": "/arts-contest/static/css/main.4fdb7c31.css",
+    "main.js": "/arts-contest/static/js/main.2081888b.js",
     "static/js/787.973e4a92.chunk.js": "/arts-contest/static/js/787.973e4a92.chunk.js",
+    "static/media/mailing-background.jpg": "/arts-contest/static/media/mailing-background.2837a09fe94d5692636d.jpg",
     "static/media/gift.svg": "/arts-contest/static/media/gift.64598c5779c64881315d.svg",
     "static/media/vk.svg": "/arts-contest/static/media/vk.2916b580a516c7c95f7d.svg",
     "static/media/diploma.jpg": "/arts-contest/static/media/diploma.2d8da1fd8070f74a7b67.jpg",
@@ -31,7 +32,10 @@
     "static/media/space-racket.svg": "/arts-contest/static/media/space-racket.8cc35028eef7dc43948b.svg",
     "static/media/space-palitra.svg": "/arts-contest/static/media/space-palitra.fbd76d1b47367763e7c6.svg",
     "static/media/space-frame.svg": "/arts-contest/static/media/space-frame.b7945964f23286b5cd27.svg",
+    "static/media/vk-icon.svg": "/arts-contest/static/media/vk-icon.f5c2feb27e9a903856c1f2f41ad35898.svg",
     "static/media/звезды.svg": "/arts-contest/static/media/звезды.cea029e6777ade6a403763e2c5a3eef8.svg",
+    "static/media/telegram-icon.svg": "/arts-contest/static/media/telegram-icon.06c29491a235cdbdacc49b2cf78ca88d.svg",
+    "static/media/yandex-icon.svg": "/arts-contest/static/media/yandex-icon.2da41b56f8f162bf087506520a424e99.svg",
     "static/media/diploma-underline.svg": "/arts-contest/static/media/diploma-underline.a63d5e15f9ca74219153.svg",
     "static/media/space-planet-1.svg": "/arts-contest/static/media/space-planet-1.6cf56c2780304dfc635c.svg",
     "static/media/benefits-underline.svg": "/arts-contest/static/media/benefits-underline.1b1e1c46fdd5c19be36f.svg",
@@ -39,13 +43,15 @@
     "static/media/space-del.svg": "/arts-contest/static/media/space-del.f003f3642f3f7740cf27.svg",
     "static/media/space-plus.svg": "/arts-contest/static/media/space-plus.6c320c1cfe205e707b12.svg",
     "index.html": "/arts-contest/index.html",
+    "static/media/faq-btn.svg": "/arts-contest/static/media/faq-btn.4d684fcbd48cf308527e.svg",
+    "static/media/footer-btn.svg": "/arts-contest/static/media/footer-btn.5f00c3339a051a0d4ba4.svg",
     "static/media/checkbox.svg": "/arts-contest/static/media/checkbox.1ef455351cd1a2c41c9c.svg",
-    "main.5c3c2054.css.map": "/arts-contest/static/css/main.5c3c2054.css.map",
-    "main.99b0fc0c.js.map": "/arts-contest/static/js/main.99b0fc0c.js.map",
+    "main.4fdb7c31.css.map": "/arts-contest/static/css/main.4fdb7c31.css.map",
+    "main.2081888b.js.map": "/arts-contest/static/js/main.2081888b.js.map",
     "787.973e4a92.chunk.js.map": "/arts-contest/static/js/787.973e4a92.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c3c2054.css",
-    "static/js/main.99b0fc0c.js"
+    "static/css/main.4fdb7c31.css",
+    "static/js/main.2081888b.js"
   ]
 }
