@@ -8,6 +8,7 @@ import { useState } from "react";
 const Request = () => {
   const [isAnimated, setIsAnimated] = useState<boolean>(false);
   const [arePlanesAnimated, setArePlanesAnimated] = useState<boolean>(false);
+  const [dateInputType, setDateInputType] = useState<string>("text");
 
   return (
     <section
@@ -26,7 +27,16 @@ const Request = () => {
         <SectionTitle>Зарегистрируйтесь, чтобы участвовать</SectionTitle>
         <form className="request__form">
           <FormInput type="text" placeholder="ФИО ребенка" />
-          <FormInput type="date" placeholder="Дата рождения" />
+          <FormInput
+            type={dateInputType}
+            placeholder="Дата рождения"
+            onFocus={() => {
+              setDateInputType("date");
+            }}
+            onblur={() => {
+              setDateInputType("text");
+            }}
+          />
           <FormInput type="text" placeholder="Город" />
           <FormInput type="email" placeholder="Email" />
           <FormInput type="password" placeholder="Пароль" />

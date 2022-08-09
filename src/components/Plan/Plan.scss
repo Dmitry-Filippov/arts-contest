@@ -123,8 +123,47 @@
   z-index: 5;
 }
 .plan__plane_animated {
-  animation: plane 6s ease .5s 1;
+  animation: plane 6s ease 0.5s 1;
   offset-path: path(
     "M1 1C319.036 51.7023 682.322 315.702 787.69 366.287C1433.36 676.262 1708.8 405.466 1749 405.466"
   );
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    @keyframes plane-safary-only {
+      from {
+        opacity: 1;
+        transform: translate(-200px);
+        animation-timing-function: linear;
+      }
+      13% {
+        opacity: 1;
+        transform: translate(200px, -100px);
+        animation-timing-function: linear;
+      }
+
+      37% {
+        opacity: 1;
+        transform: translate(800px, -200px);
+        animation-timing-function: linear;
+      }
+
+      61% {
+        opacity: 1;
+        transform: translate(1300px, -400px) rotate(-20deg);
+        animation-timing-function: linear;
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(2000px, -2000px) rotate(-45deg);
+        animation-timing-function: linear;
+      }
+    }
+
+    .plan__plane_animated {
+      animation: plane-safary-only 6s 0.5s 1;
+    }
+  }
 }

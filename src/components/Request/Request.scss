@@ -154,3 +154,31 @@
   animation: form-plane 2s 1;
   display: block;
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    @keyframes form-plane-safary-only {
+      from {
+        top: -700px;
+        right: -270px;
+      }
+
+      52% {
+        top: -170px;
+        right: -100px;
+      }
+
+      90% {
+        top: -163px;
+        right: -73px;
+      }
+      to {
+        top: -160px;
+        right: -70px;
+      }
+    }
+  }
+  .request__plane-three_animated {
+    animation: form-plane-safary-only ease 2s 1;
+  }
+}
