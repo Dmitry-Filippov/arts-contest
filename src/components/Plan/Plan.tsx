@@ -33,14 +33,7 @@ const Plan = () => {
         Пошаговый <span className="plan__underline">план</span>
       </SectionTitle>
 
-      <div
-        className={`plan__plane ${isAnimated ? "plan__plane_animated" : ""}`}
-      ></div>
-
       <ul className="plan__steps">
-        {/* <div
-          className={`plan__plane ${isAnimated ? "plan__plane_animated" : ""}`}
-        ></div> */}
         <li className="plan__step one">
           <p className="plan__step__number">1</p>
           <p

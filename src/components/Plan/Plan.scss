@@ -1,19 +1,6 @@
 @import "../../styles/colors";
 @import "../../styles/fonts";
 
-@keyframes plane {
-  from {
-    offset-distance: 0%;
-    opacity: 1;
-  }
-
-  to {
-    transform: rotate(45deg);
-    offset-distance: 100%;
-    opacity: 1;
-  }
-}
-
 @keyframes appearance {
   from {
     opacity: 0;
@@ -109,27 +96,4 @@
 
 .plan__step-caption_visible {
   opacity: 1;
-}
-
-.plan__plane {
-  width: 110px;
-  height: 65px;
-  background-image: url(../../imgs/plane.svg);
-  background-position: center;
-  background-size: cover;
-  opacity: 0;
-  z-index: 500;
-  position: absolute;
-}
-.plan__plane_animated {
-  animation: plane 7s ease 0.5s 1;
-  offset-path: path("M1 2.00003C424.5 -28 1193 1068.5 1910.5 464");
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .plan__plane {
-      position: static;
-    }
-  }
 }
